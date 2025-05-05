@@ -5,6 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>古本説話集</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #content {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #text {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    #footer {
+      position: sticky;
+      bottom: 0;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .analysis {
+      font-size: 0.8em; /* 小さい文字サイズ */
+      color: gray; /* グレーの文字色 */
+      margin-top: 10px; /* 上部に余白を追加 */
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,14 +64,126 @@
       <a href="index.html">ホーム</a>
     </nav>
   </header>
-  <main>
-    <article>
-      <h2>古本説話集</h2>
-      <p>古本説話集に関する詳細な内容がここに表示されます。</p>
-    </article>
-  </main>
-  <footer>
-    <!-- フッターの内容を削除 -->
-  </footer>
+  <div id="content">
+    <div id="text">
+      <main>
+        <article>
+          <h2>古本説話集</h2>
+        <p>
+      今は昔、平中1)といふ色好みの、いみじく思ふ女の、若く美しかりけるを、妻(め)のもとに率(い)て来て置きたり。
+      妻にくげなることどもを言ひつづくるに、追ひ出だしけり。この妻に従ひて、「いみじうらうたし」とは思ひながら、え留めず。
+      いちはやく言ひければ、近くだにもえ寄らで、四尺の屏風に押しかかりて立てり。
+      「世の中の思ひのほかにてあること。いかにしてものし給ふとも、忘れて消息もし給へ。をのれもさなむ思ふに」など、言ひけり。
+      この女は包みなどに物入れしたためて車とりにやりて、待つほどなり。「いとあはれ」と思けり。
+      さて、出でにけり。とばかりありて、おこせたる、
+    </p>
+    <div class="analysis">
+      今（副詞）は（係助詞）昔（名詞）、平中（固有名詞）1)（補助記号）と（助詞）いふ（動詞・連体形・四段活用）色好み（名詞）の（助詞）、
+      いみじく（副詞）思ふ（動詞・連体形・四段活用）女（名詞）の（助詞）、若く（形容詞・連用形）美しかり（形容詞・連用形）ける（助動詞・過去）を（助詞）、
+      妻（名詞）の（助詞）もと（名詞）に（助詞）率て来て（動詞・連用形・下二段活用）置きたり（動詞・終止形・ラ行変格活用）。
+      妻（名詞）にくげなる（形容動詞・連体形）ことども（名詞）を（助詞）言ひつづくる（動詞・連体形・四段活用）に（助詞）、追ひ出だしけり（動詞・終止形・四段活用）。
+      この（指示詞）妻（名詞）に（助詞）従ひて（動詞・連用形・四段活用）、「いみじう（副詞）らうたし（形容詞・終止形）」とは（助詞）思ひ（動詞・連用形・四段活用）ながら（助詞）、
+      え（副詞）留め（動詞・未然形・下一段活用）ず（助動詞・打消）。いちはやく（副詞）言ひ（動詞・連用形・四段活用）ければ（助詞）、
+      近く（形容詞・連用形）だにも（副助詞）え（副詞）寄ら（動詞・未然形・四段活用）で（助詞）、四尺（名詞）の（助詞）屏風（名詞）に（助詞）押しかかり（動詞・連用形・四段活用）て（助詞）立てり（動詞・終止形・ラ行変格活用）。
+      「世の中（名詞）の（助詞）思ひ（名詞）の（助詞）ほか（名詞）に（助詞）て（助詞）ある（動詞・連体形・ラ行変格活用）こと（名詞）。
+      いかに（副詞）して（助詞）ものし（動詞・連体形・サ行変格活用）給ふ（補助動詞・連体形）とも（助詞）、忘れて（動詞・連用形・下一段活用）消息（名詞）も（係助詞）し（動詞・連用形・サ行変格活用）給へ（補助動詞・命令形）。
+      をのれ（名詞）も（係助詞）さ（副詞）なむ（係助詞）思ふ（動詞・連体形・四段活用）に（助詞）」など（助詞）、言ひ（動詞・連用形・四段活用）けり（助動詞・過去）。
+    </div>
+
+    <p>
+      忘らるな忘れやしぬる春霞今朝立ちながら契りつること
+    </p>
+    <div class="analysis">
+      忘らる（動詞・未然形・下二段活用）な（終助詞）忘れ（動詞・未然形・下一段活用）や（係助詞）しぬる（動詞・連体形・ナ行変格活用）
+      春霞（名詞）今朝（名詞）立ち（動詞・連用形・四段活用）ながら（助詞）契り（名詞）つる（助動詞・連体形・完了）こと（名詞）
+    </div>
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <div id="footer">
+    <button id="changeButton">現代語訳する</button>
+    <button id="resetButton" style="display: none;">もとに戻す</button>
+    <button id="toggleAnalysisButton">品詞分解を消す</button>
+  </div>
+
+  <script>
+    // ボタンとテキストの要素を取得
+    const textElement = document.getElementById('text');
+    const changeButton = document.getElementById('changeButton');
+    const resetButton = document.getElementById('resetButton');
+    const toggleAnalysisButton = document.getElementById('toggleAnalysisButton');
+
+    // 元の内容を保存
+    const originalContent = textElement.innerHTML;
+
+    // 現代語訳の内容
+    const translatedContent = `
+      <main>
+        <article>
+          <h2>古本説話集 現代語訳</h2>
+          <p>
+      今となっては昔の話ですが、平中という恋愛好きな人が、とても思いを寄せている若く美しい女性を、自分の妻のもとに連れてきて置いておきました。
+      妻に対して高慢な態度を取り続けたため、ついに追い出されてしまいました。この妻に従っていた女性は、「とてもかわいらしい人だ」と思いながらも、とどまることができませんでした。
+      妻が早々と言い放ったため、その女性は近くにも寄れず、四尺の屏風に寄りかかるように立っていました。
+      「世の中は思った通りにはいかないものですね。どのように振る舞われても、私を忘れて便りもしないでください。私もそのように思っています」と言ったそうです。
+      この女性は包みなどに物を入れて車を取りにやり、待っている間、「とても悲しい」と思ったそうです。
+      そして、ついに出て行きました。しばらくして届いたものには、
+    </p>
+    <p>
+      忘れないでください。忘れることなどできるでしょうか。この春霞のように、今朝立ち去りながらも、私たちが交わした約束を。
+    </p>
+        </article>
+      </main>
+    `;
+
+    // 品詞分解表示状態を管理するフラグ
+    let analysisVisible = true;
+
+    // 「現代語訳する」ボタンがクリックされたときの処理
+    changeButton.addEventListener('click', () => {
+      textElement.innerHTML = translatedContent;
+      changeButton.style.display = 'none'; // 現代語訳ボタンを非表示
+      resetButton.style.display = 'inline-block'; // もとに戻すボタンを表示
+      toggleAnalysisButton.style.display = 'none'; // 品詞分解ボタンを非表示
+    });
+
+    // 「もとに戻す」ボタンがクリックされたときの処理
+    resetButton.addEventListener('click', () => {
+      textElement.innerHTML = originalContent;
+      resetButton.style.display = 'none'; // もとに戻すボタンを非表示
+      changeButton.style.display = 'inline-block'; // 現代語訳ボタンを表示
+      toggleAnalysisButton.style.display = 'inline-block'; // 品詞分解ボタンを再表示
+
+      // 再度「品詞分解を消す」ボタンを機能させるためにイベントリスナーを再登録
+      reinitializeAnalysisToggle();
+      applyAnalysisVisibility(); // 品詞分解の表示状態を適用
+    });
+
+    // 「品詞分解を消す」ボタンがクリックされたときの処理
+    toggleAnalysisButton.addEventListener('click', () => {
+      analysisVisible = !analysisVisible; // 表示状態をトグル
+      applyAnalysisVisibility(); // 表示状態を適用
+      toggleAnalysisButton.textContent = analysisVisible ? '品詞分解を消す' : '品詞分解を表示する';
+    });
+
+    // 品詞分解の表示状態を適用
+    const applyAnalysisVisibility = () => {
+      const analysisElements = document.querySelectorAll('.analysis');
+      analysisElements.forEach((el) => {
+        el.style.display = analysisVisible ? 'block' : 'none';
+      });
+    };
+
+    // 「品詞分解を消す」ボタンの機能を再登録
+    const reinitializeAnalysisToggle = () => {
+      const analysisElements = document.querySelectorAll('.analysis');
+      toggleAnalysisButton.textContent = analysisVisible ? '品詞分解を消す' : '品詞分解を表示する';
+    };
+
+    // 初期化時に「品詞分解を消す」ボタンの機能を登録
+    reinitializeAnalysisToggle();
+  </script>
 </body>
 </html>
