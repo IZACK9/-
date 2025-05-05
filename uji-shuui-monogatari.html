@@ -5,6 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>宇治拾遺物語</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #content {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #text {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    #footer {
+      position: sticky;
+      bottom: 0;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .analysis {
+      font-size: 0.8em; /* 小さい文字サイズ */
+      color: gray; /* グレーの文字色 */
+      margin-top: 10px; /* 上部に余白を追加 */
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,14 +64,129 @@
       <a href="index.html">ホーム</a>
     </nav>
   </header>
-  <main>
-    <article>
-      <h2>宇治拾遺物語</h2>
-      <p>宇治拾遺物語に関する詳細な内容がここに表示されます。</p>
-    </article>
-  </main>
-  <footer>
-    <!-- フッターの内容を削除 -->
-  </footer>
+  <div id="content">
+    <div id="text">
+      <main>
+        <article>
+          <h2>宇治拾遺物語</h2>
+        <p>
+      今は昔、薬師寺の別当僧都といふ人ありけり。別当はしけれども、殊（こと）に寺の物も使はで、極楽(ごくらく）に生れん事をなん願ひける。
+    </p>
+    <div class="analysis">
+      今（副詞）は（係助詞）昔（名詞）、薬師寺（名詞）の（助詞）別当（名詞）僧都（名詞）と（助詞）いふ（動詞・連体形・四段活用）人（名詞）あり（動詞・連用形・ラ行変格活用）けり（助動詞・終止形）。
+      別当（名詞）は（係助詞）し（動詞・連用形・サ行変格活用）けれ（助動詞・已然形）ども（接続助詞）、殊（副詞）（こと）（名詞）に（助詞）寺（名詞）の（助詞）物（名詞）も（係助詞）使は（動詞・未然形・四段活用）で（助詞）、
+      極楽（名詞）（ごくらく）（名詞）に（助詞）生れ（動詞・連用形・下二段活用）ん（助動詞・意志）事（名詞）を（助詞）なん（係助詞）願ひ（動詞・連用形・四段活用）ける（助動詞・連体形）。
+    </div>
+
+    <p>
+      年老い、病（やまひ）して、死ぬるきざみになりて、念仏して消えいらんとす。無下（むげ）に限りと見ゆる程に、よろしうなりて、弟子を呼びていふやう、「見るやうに念仏は他念なく申して死ぬれば、極楽の迎へいますらんと待たるるに、極楽の迎へは見えずして、火車（ひのくるま）を寄す。『こはなんぞ。かくは思はず。何（なに）の罪によりて地獄の迎へは来るぞ』といひつれば、車に付きたる鬼どものいふやう、『この寺の物を一年（ひととせ）伍斗借りていまだ返さねば、その罪によりてこの迎へは得たるなり』といひつれば、我（われ）いひつるは、『さばかりの罪にては地獄に落つべきやうなし。その物を返してん』といへば、火車（ひのくるま）を寄せて待つなり。さればとくとく一石誦経（いつこくずきやう）にせよ」といひければ、弟子ども手惑（てまど）ひをして、いふままに誦経しつ。その鐘の声のする折、火車（ひのくるま）帰りぬ。さてとばかりありて、「火車（ひのくるま）は帰りて、極楽（ごくらく）の迎へ今なんおはする」と、手を摺（す）りて悦（よろこ）びつつ終わりにけり。
+    </p>
+    <div class="analysis">
+      年（名詞）老い（動詞・連用形・四段活用）、病（名詞）（やまひ）（名詞）して（助詞）、死ぬる（動詞・連体形・ナ行変格活用）きざみ（名詞）に（助詞）なり（動詞・連用形・ラ行変格活用）て（助詞）、
+      念仏（名詞）して（助詞）消え（動詞・連用形・四段活用）いら（動詞・未然形・四段活用）ん（助動詞・意志）と（助詞）す（動詞・終止形・サ行変格活用）。
+      無下（名詞）（むげ）（名詞）に（助詞）限り（名詞）と（助詞）見ゆる（動詞・連体形・下二段活用）程（名詞）に（助詞）、
+      よろしう（形容詞・連用形）なり（助動詞・連用形）て（助詞）、弟子（名詞）を（助詞）呼び（動詞・連用形・四段活用）て（助詞）いふ（動詞・終止形・四段活用）やう（名詞）、
+      「見る（動詞・連体形・四段活用）やう（名詞）に（助詞）念仏（名詞）は（係助詞）他念（名詞）なく（助詞）申し（動詞・連用形・四段活用）て（助詞）死ぬれ（動詞・已然形・ナ行変格活用）ば（助詞）、
+      極楽（名詞）（ごくらく）（名詞）の（助詞）迎へ（名詞）います（動詞・終止形・サ行変格活用）ら（助動詞・未然形）ん（助動詞・意志）と（助詞）待た（動詞・未然形・四段活用）るる（助動詞・存続）に（助詞）、
+      極楽（名詞）の（助詞）迎へ（名詞）は（係助詞）見え（動詞・未然形・下一段活用）ず（助動詞・打消し）して（助詞）、火車（名詞）（ひのくるま）（名詞）を（助詞）寄す（動詞・終止形・サ行変格活用）。こ（指示詞）
+は（係助詞）なんぞ。（副詞）かく（指示詞）は（係助詞）思は（動詞の未然形）ず（打ち消し・助動詞）何（名詞）の（格助詞）罪（名詞）に（格助詞）よりて（接続助詞）地獄（名詞）の（格助詞）迎へ（名詞）は（係助詞）来る（動詞の格助詞）ぞ（助動詞）と（格助詞）いひつれ（動詞の連用形）
+ば（接続助詞）車（名詞）に（格助詞）付きたる（動詞の連体形）鬼ども（名詞）の（格助詞）いふ（動詞の連体形）やう（名詞）この（指示詞）寺（名詞）の（格助詞）物（名詞）を（格助詞）一年（名詞）伍斗（名詞）借りて（動詞の連用形）いまだ（副詞）返さね（動詞の已然形）ば（接続助詞）
+        その（指示詞）罪（名詞）に（格助詞）よりて（接続助詞）この（指示詞）迎へ（名詞）は（係助詞）得たる（連体形）なり（助動詞の断定）
+    </div>
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <div id="footer">
+    <button id="changeButton">現代語訳する</button>
+    <button id="resetButton" style="display: none;">もとに戻す</button>
+    <button id="toggleAnalysisButton">品詞分解を消す</button>
+  </div>
+
+  <script>
+    // ボタンとテキストの要素を取得
+    const textElement = document.getElementById('text');
+    const changeButton = document.getElementById('changeButton');
+    const resetButton = document.getElementById('resetButton');
+    const toggleAnalysisButton = document.getElementById('toggleAnalysisButton');
+
+    // 元の内容を保存
+    const originalContent = textElement.innerHTML;
+
+    // 現代語訳の内容
+    const translatedContent = `
+      <main>
+        <article>
+          <h2>宇治拾遺物語 現代語訳</h2>
+          <p>
+          昔、薬師寺の別当（寺の管理をする僧）で僧都（高僧の位）の人がいた。別当という地位にあったけれども、特に寺の物を私的に使うこともせず、極楽に生まれることを強く願っていた。
+          </p>
+          <p>
+            年をとり、病気になって、いよいよ死ぬ間際になったとき、念仏を唱えて静かに息を引き取ろうとしていた。もう最期かと思われるほどだったが、急に容体がよくなり、弟子たちを呼んで次のように話した。
+          </p>
+          <p>
+          「念仏を他のことを考えずに一心に唱えて死ねば、極楽からの迎えが来るはずだと思って待っていたが、極楽の迎えは見えず、代わりに火の車（＝地獄の使い）がやって来た。『これは一体どうしたことか。そんなはずではない。なぜ地獄の迎えが来たのか』と尋ねると、車に乗っていた鬼たちがこう言った。『この寺の物を一年前に五斗（ごと）借りて、まだ返していない。その罪によってこの迎えを受けたのだ』と。
+          </p>
+          <p>
+           私はそれに対して、『たったそれだけの罪で地獄に落ちるのはおかしい。その物は返すから』と言うと、火の車は戻ってしばらく待つというのだ。だから急いで一石分（いっこく＝五斗）の誦経（お経を読むことで罪を償うこと）をしてほしい」と言った。
+          </p>
+          <p>
+弟子たちは慌てながらも、言われた通りに急いでお経を読み始めた。ちょうどそのお経の声が響いたとき、火の車は帰っていった。
+          </p>
+          <p>
+           それからしばらくして、「火の車は帰っていき、今、極楽からの迎えが来ている」と言って、手をすり合わせて喜びながら亡くなった。
+          </p>
+        </article>
+      </main>
+    `;
+
+    // 品詞分解表示状態を管理するフラグ
+    let analysisVisible = true;
+
+    // 「現代語訳する」ボタンがクリックされたときの処理
+    changeButton.addEventListener('click', () => {
+      textElement.innerHTML = translatedContent;
+      changeButton.style.display = 'none'; // 現代語訳ボタンを非表示
+      resetButton.style.display = 'inline-block'; // もとに戻すボタンを表示
+      toggleAnalysisButton.style.display = 'none'; // 品詞分解ボタンを非表示
+    });
+
+    // 「もとに戻す」ボタンがクリックされたときの処理
+    resetButton.addEventListener('click', () => {
+      textElement.innerHTML = originalContent;
+      resetButton.style.display = 'none'; // もとに戻すボタンを非表示
+      changeButton.style.display = 'inline-block'; // 現代語訳ボタンを表示
+      toggleAnalysisButton.style.display = 'inline-block'; // 品詞分解ボタンを再表示
+
+      // 再度「品詞分解を消す」ボタンを機能させるためにイベントリスナーを再登録
+      reinitializeAnalysisToggle();
+      applyAnalysisVisibility(); // 品詞分解の表示状態を適用
+    });
+
+    // 「品詞分解を消す」ボタンがクリックされたときの処理
+    toggleAnalysisButton.addEventListener('click', () => {
+      analysisVisible = !analysisVisible; // 表示状態をトグル
+      applyAnalysisVisibility(); // 表示状態を適用
+      toggleAnalysisButton.textContent = analysisVisible ? '品詞分解を消す' : '品詞分解を表示する';
+    });
+
+    // 品詞分解の表示状態を適用
+    const applyAnalysisVisibility = () => {
+      const analysisElements = document.querySelectorAll('.analysis');
+      analysisElements.forEach((el) => {
+        el.style.display = analysisVisible ? 'block' : 'none';
+      });
+    };
+
+    // 「品詞分解を消す」ボタンの機能を再登録
+    const reinitializeAnalysisToggle = () => {
+      const analysisElements = document.querySelectorAll('.analysis');
+      toggleAnalysisButton.textContent = analysisVisible ? '品詞分解を消す' : '品詞分解を表示する';
+    };
+
+    // 初期化時に「品詞分解を消す」ボタンの機能を登録
+    reinitializeAnalysisToggle();
+  </script>
 </body>
 </html>
