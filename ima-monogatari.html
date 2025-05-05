@@ -6,6 +6,50 @@
   <title>今物語</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #content {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #text {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    #footer {
+      position: sticky;
+      bottom: 0;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
     .analysis {
       font-size: 0.8em; /* 小さい文字サイズ */
       color: gray; /* グレーの文字色 */
@@ -20,10 +64,13 @@
       <a href="index.html">ホーム</a>
     </nav>
   </header>
-  <main>
-    <article>
-      <h2>今物語</h2>
-      <p>
+  <div id="content">
+    <div id="text">
+      <main>
+        <article>
+          <h2>今物語</h2>
+           <p>
+          
         伏見中納言といひける人のもとへ、西行法師、行きてたづねけるに、あるじは
         ありがたがひたるほどに、侍の出でて、「何事いふ法師ぞ」と言ふに、縁に尻かけて
         居たるを、けしかる法師の、かくしれがましきよと思ひたるけしきにて、侍どもにらみ
@@ -74,12 +121,114 @@
       <div class="analysis">
         後（名詞）に（助詞）、中納言（名詞）の（助詞）帰り（動詞・連用形・四段活用）たる（助動詞・存続）に（助詞）、
         「かかる（連体詞）しれ（名詞）者（名詞）こそ（係助詞）候ひ（動詞・連用形・四段活用）つれ（助動詞・完了）。
-        張り（動詞・連用形・四段活用）伏せ（動詞・連用形・下二段活用）候ひ（動詞・連用形・四段活用）ぬ（助動詞・完了）」と（助詞）...
+        張り（動詞・連用形・四段活用）伏せ（動詞・連用形・下二段活用）候ひ（動詞・連用形・四段活用）ぬ（助動詞・完了）」と（助詞）かしこ顔（名詞）に（格助詞）語りければ（動詞「語る」の連用形＋助動詞「けり」の已然形＋接続助詞「ば」）　西行（名詞）に（格助詞）　こそ（係助詞）　ありつらめ（動詞「あり」の連用形＋助動詞「つ」の連用形＋成道し「らめ」の終止形）　ふしぎ（名詞）の（格助詞）とて（助詞の接続助詞）
+心うがられ（動詞「心うがる」の連用形＋助動詞「れ」の未然形）けり（助動詞「けり」の終止形）この（指示詞の連体詞）　侍（名詞）をば（助詞の格助詞＋係助詞）やがて（副詞）追ひ出だして（動詞「追ひ出だす」の連用形）けり（助動詞「けり」の終止形）。
       </div>
-    </article>
-  </main>
-  <footer>
-    <!-- フッターの内容を削除 -->
-  </footer>
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <div id="footer">
+    <button id="changeButton">現代語訳する</button>
+    <button id="resetButton" style="display: none;">もとに戻す</button>
+    <button id="toggleAnalysisButton">品詞分解を消す</button>
+  </div>
+
+  <script>
+    // ボタンとテキストの要素を取得
+    const textElement = document.getElementById('text');
+    const changeButton = document.getElementById('changeButton');
+    const resetButton = document.getElementById('resetButton');
+    const toggleAnalysisButton = document.getElementById('toggleAnalysisButton');
+
+    // 元の内容を保存
+    const originalContent = textElement.innerHTML;
+
+    // 現代語訳の内容
+    const translatedContent = `
+      <main>
+        <article>
+          <h2>今物語 現代語訳</h2>
+          <p>
+            伏見中納言という人のもとへ、西行法師が訪ねて行ったとき、主人（中納言）は外出していて留守だった。
+            そのとき、家の使用人（侍）が出てきて、「何の用がある法師（僧）だ」と言ってきたが、西行は縁側に腰をかけて座っていた。
+            侍は、それを無礼でけしからぬ坊主だと腹を立てた様子で、西行をにらみつけた。
+            すると、そのとき、簾の内側（屋敷の中）から箏の琴で「秋風楽（しゅうふうらく）」という曲を見事に弾いている音が聞こえてきた。
+          </p>
+          <p>
+            それを聞いた西行は、その侍に「ひと言申し上げたい」と言った。
+          </p>
+          <p>
+            侍は、むかつくとは思いながらも近寄ってきて「何の用だ」と言ったところ、
+            西行は「簾の内に申し上げてください」と言って、
+          </p>
+          <p>
+            <strong>「ことに身にしむ秋の風かな」</strong><br />
+            （とりわけ身にしみる秋の風だなあ）
+          </p>
+          <p>
+            と一句詠んだ。
+          </p>
+          <p>
+            それを聞いた侍は「憎たらしい坊主がぬけぬけと」と怒って、簾をぴしゃりと閉めてしまった。
+            西行は、すごすごと帰っていった。
+          </p>
+          <p>
+            後に中納言が帰ってきて、侍は「こういう無礼な者が来ましたので、簾を閉めて追い返しました」と得意げに話したところ、
+            中納言は「それは西行だったに違いない。なんというもったいないことを」と言って、心苦しく思った。
+            この侍は、そのまま家から追い出されてしまった。
+          </p>
+        </article>
+      </main>
+    `;
+
+    // 品詞分解表示状態を管理するフラグ
+    let analysisVisible = true;
+
+    // 「現代語訳する」ボタンがクリックされたときの処理
+    changeButton.addEventListener('click', () => {
+      textElement.innerHTML = translatedContent;
+      changeButton.style.display = 'none'; // 現代語訳ボタンを非表示
+      resetButton.style.display = 'inline-block'; // もとに戻すボタンを表示
+      toggleAnalysisButton.style.display = 'none'; // 品詞分解ボタンを非表示
+    });
+
+    // 「もとに戻す」ボタンがクリックされたときの処理
+    resetButton.addEventListener('click', () => {
+      textElement.innerHTML = originalContent;
+      resetButton.style.display = 'none'; // もとに戻すボタンを非表示
+      changeButton.style.display = 'inline-block'; // 現代語訳ボタンを表示
+      toggleAnalysisButton.style.display = 'inline-block'; // 品詞分解ボタンを再表示
+
+      // 再度「品詞分解を消す」ボタンを機能させるためにイベントリスナーを再登録
+      reinitializeAnalysisToggle();
+      applyAnalysisVisibility(); // 品詞分解の表示状態を適用
+    });
+
+    // 「品詞分解を消す」ボタンがクリックされたときの処理
+    toggleAnalysisButton.addEventListener('click', () => {
+      analysisVisible = !analysisVisible; // 表示状態をトグル
+      applyAnalysisVisibility(); // 表示状態を適用
+      toggleAnalysisButton.textContent = analysisVisible ? '品詞分解を消す' : '品詞分解を表示する';
+    });
+
+    // 品詞分解の表示状態を適用
+    const applyAnalysisVisibility = () => {
+      const analysisElements = document.querySelectorAll('.analysis');
+      analysisElements.forEach((el) => {
+        el.style.display = analysisVisible ? 'block' : 'none';
+      });
+    };
+
+    // 「品詞分解を消す」ボタンの機能を再登録
+    const reinitializeAnalysisToggle = () => {
+      const analysisElements = document.querySelectorAll('.analysis');
+      toggleAnalysisButton.textContent = analysisVisible ? '品詞分解を消す' : '品詞分解を表示する';
+    };
+
+    // 初期化時に「品詞分解を消す」ボタンの機能を登録
+    reinitializeAnalysisToggle();
+  </script>
 </body>
 </html>
