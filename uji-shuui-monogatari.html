@@ -50,12 +50,17 @@
       background-color: #0056b3;
     }
 
+    p {
+      color: #888; /* 薄いグレー */
+    }
+
     .analysis {
       font-size: 0.8em; /* 小さい文字サイズ */
-      color: gray; /* グレーの文字色 */
+      color: #000; /* 濃い黒 */
       margin-top: 10px; /* 上部に余白を追加 */
     }
-      .dark-text p {
+
+    .dark-text p {
       color: #000 !important; /* 濃い黒 */
     }
   </style>
@@ -199,6 +204,7 @@
       </main>
     `;
 
+ 
     // 品詞分解表示状態を管理するフラグ
     let analysisVisible = true;
 
@@ -221,7 +227,9 @@
       reinitializeAnalysisToggle();
       applyAnalysisVisibility(); // 品詞分解の表示状態を適用
     });
-      toggleAnalysisButton.addEventListener('click', () => {
+
+    // 「品詞分解を消す」ボタンがクリックされたときの処理
+    toggleAnalysisButton.addEventListener('click', () => {
       analysisVisible = !analysisVisible; // 表示状態をトグル
       applyAnalysisVisibility(); // 表示状態を適用
       toggleAnalysisButton.textContent = analysisVisible ? '品詞分解を消す' : '品詞分解を表示する';
@@ -233,13 +241,6 @@
       } else {
         textContainer.classList.remove('dark-text');
       }
-    });
-
-    // 「品詞分解を消す」ボタンがクリックされたときの処理
-    toggleAnalysisButton.addEventListener('click', () => {
-      analysisVisible = !analysisVisible; // 表示状態をトグル
-      applyAnalysisVisibility(); // 表示状態を適用
-      toggleAnalysisButton.textContent = analysisVisible ? '品詞分解を消す' : '品詞分解を表示する';
     });
 
     // 品詞分解の表示状態を適用
