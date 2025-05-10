@@ -55,6 +55,9 @@
       color: gray; /* グレーの文字色 */
       margin-top: 10px; /* 上部に余白を追加 */
     }
+      .dark-text p {
+      color: #000 !important; /* 濃い黒 */
+    }
   </style>
 </head>
 <body>
@@ -217,6 +220,19 @@
       // 再度「品詞分解を消す」ボタンを機能させるためにイベントリスナーを再登録
       reinitializeAnalysisToggle();
       applyAnalysisVisibility(); // 品詞分解の表示状態を適用
+    });
+      toggleAnalysisButton.addEventListener('click', () => {
+      analysisVisible = !analysisVisible; // 表示状態をトグル
+      applyAnalysisVisibility(); // 表示状態を適用
+      toggleAnalysisButton.textContent = analysisVisible ? '品詞分解を消す' : '品詞分解を表示する';
+
+      // 本文を濃い黒字にする
+      const textContainer = document.getElementById('text');
+      if (!analysisVisible) {
+        textContainer.classList.add('dark-text');
+      } else {
+        textContainer.classList.remove('dark-text');
+      }
     });
 
     // 「品詞分解を消す」ボタンがクリックされたときの処理
